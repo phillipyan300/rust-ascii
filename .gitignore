@@ -32,3 +32,4 @@ img/*.webp
 # But keep small test images
 !img/test_*.png
 !img/test_*.jpg
+*.mp4
