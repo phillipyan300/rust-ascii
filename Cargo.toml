@@ -11,8 +11,18 @@ path = "src/main.rs"
 name = "image-to-html"
 path = "src/bin/image_to_html.rs"
 
+[[bin]]
+name = "ascii-batch"
+path = "src/bin/ascii_batch.rs"
+
+[[bin]]
+name = "ascii-play"
+path = "src/bin/ascii_play.rs"
+
 [dependencies]
 image = "0.25"
 clap = { version = "4.5", features = ["derive"] }
 anyhow = "1.0"
 html-escape = "0.2"
+crossterm = "0.28"
+rayon = "1.10"
