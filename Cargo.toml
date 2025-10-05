@@ -1,0 +1,18 @@
+[package]
+name = "rust-ascii"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "rust-ascii"
+path = "src/main.rs"
+
+[[bin]]
+name = "image-to-html"
+path = "src/bin/image_to_html.rs"
+
+[dependencies]
+image = "0.25"
+clap = { version = "4.5", features = ["derive"] }
+anyhow = "1.0"
+html-escape = "0.2"
