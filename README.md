@@ -197,34 +197,6 @@ character = ramp[index]
 - **Memory Efficient**: Processes frames independently, minimal memory overhead
 - **Optimized Pipeline**: Release builds recommended for video processing
 
-## Supported Image Formats
-
-- PNG
-- JPEG
-- GIF (first frame only)
-- WebP (where supported by the image crate)
-
-## Error Handling
-
-The tool provides clear error messages for:
-- Invalid file paths or unsupported formats
-- Invalid command-line arguments
-- Image decoding failures
-- Empty or invalid glyph ramps
-
-## Examples
-
-### Test Pattern Output
-
-Here's what a test pattern looks like converted to ASCII:
-
-```
-  #@@@#.   +@@@%:   -@@@@-   .%@@@*    #@@@#.   +@@@%:   -@@@@-   :%@@@+   .#@@@#  
-::#%%%#:...+%%%%-...=%%%%=...-%%%%*:..:#%%%#:...+%%%%-...=%%%%=...-%%%%+...:#%%%#::
-%%*+++*++++*+++*++++**+++*++++*+++*++++*+++*++++*+++*++++++++++++++*+++*++++*+++*%%
-@@*+++*++++*+++**+++*++++*++++++++*++++*+++*++++*+++***=--::::--::--==+*++++*+++*@@
-```
-
 ## Future Enhancements (v2+)
 
 - **Color Support**: ANSI truecolor output
@@ -232,10 +204,6 @@ Here's what a test pattern looks like converted to ASCII:
 - **Streaming Support**: Real-time video processing without frame extraction
 - **Audio Integration**: Synchronized audio playback with ASCII animations
 - **Interactive Controls**: Pause, rewind, speed control during playback
-
-## License
-
-This project is open source. See the license file for details.
 
 ## Contributing
 
