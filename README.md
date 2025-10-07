@@ -144,6 +144,29 @@ cargo run --release --bin ascii-batch -- frames out_txt 180 2.0 lanczos3 classic
 cargo run --release --bin ascii-play -- out_txt 24
 ```
 
+### 8-Bit Audio (Experimental)
+
+**⚠️ Note: This is a temporary test feature for experimenting with retro game audio.**
+
+The demo script can extract and process audio to create that classic 8-bit game sound:
+
+```bash
+# Extract 8-bit audio along with ASCII conversion
+./scripts/run_demo.sh rickroll.mp4 30 160 2.0 audio
+
+# Play the generated 8-bit audio
+afplay audio_8bit.wav  # macOS
+aplay audio_8bit.wav   # Linux
+```
+
+**What it does:**
+- Extracts audio from video
+- Converts to mono, 16kHz sample rate
+- Applies lowpass filter and bitcrushing
+- Creates crunchy 8-bit WAV file
+
+**This feature is experimental and may be removed or changed in future versions.**
+
 ## Configuration Options
 
 ### Resampling Filters
